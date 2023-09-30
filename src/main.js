@@ -134,7 +134,8 @@ const day = querySelector(".days");
 const hour = querySelector(".hour");
 const minute = querySelector(".minute");
 const second = querySelector(".second");
-const targetDateObj = new Date('2023-09-28');
+const targetDateObj = new Date('2023-10-24');
+let downInter ;
 function countdown() {
     const currentDate = new Date();
     const timeRemaining = targetDateObj - currentDate;
@@ -157,7 +158,7 @@ function countdown() {
 }
 
 countdown();
-const downInter = setInterval(countdown, 1000);
+ downInter = setInterval(countdown, 1000);
 
 
 // Quesiton Awser
