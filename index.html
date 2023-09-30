@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Font GG -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;700;900&family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!--  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body class="text-[#000] font-Poppins text-default">
+  <!-- ASM -->
+  <!-- Header -->
+  <header id="header" class="w-full fixed py-[15px] border-b-[0.8px] border-b-[#ccc] z-40">
+    <div class="header_navigation flex items-center justify-between xss:w-[90%] xs:w-[95%] m-auto">
+      <div class="logo">
+        <img src="./assets/image/Icon.png" alt="" />
+      </div>
+      <nav class="navigation w-60 flex xs:justify-end sm:w-[70%]">
+        <ul class="flex items-center justify-around w-70 xs:hidden">
+          <li>
+            <a href="#" class="text-Black-basic leading-38 font-medium">Home</a>
+          </li>
+          <li>
+            <a href="#Discover" class="text-Black-basic leading-38 font-medium">Blog</a>
+          </li>
+          <li>
+            <a href="#question" class="text-Black-basic leading-38 font-medium">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="text-Black-basic leading-38 font-medium">EN</a><i
+              class="fa-solid fa-angle-down mx-[5px]"></i>
+          </li>
+        </ul>
+        <div class="cart w-30 xs:w-full flex items-center justify-around">
+          <button class="bg-green-default rounded-[10px] px-[10px] py-[5px] cursor-pointer text-[15px] text-white">
+            Login
+          </button>
+          <div class="buy w-[40px] h-[40px] rounded-[50%] bg-green-default text-center cursor-pointer">
+            <i class="fa-solid fa-cart-shopping leading-[40px] text-white text-[16px]"></i>
+          </div>
+          <!-- Toogle -->
+          <div class="togle p-[15px] bg-white rounded-lg sm:hidden xss:hidden">
+            <i class="fa-solid fa-bars text-black"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--  -->
+  <div class="tab_mode w-[100vw] h-[100vh] bg-gray-light-1 ml-auto z-[99] right-0 top-[10vh] xss:hidden" hidden>
+    <div class="hr_top flex justify-between mx-[30px] pt-[20px] items-center">
+      <div class="logo p-[20px] border-[#fff] border-[0.5px] rounded-[20px]">
+        <img src="./assets/image/Icon.png" alt="" />
+      </div>
+      <i class="cancel fa-solid fa-xmark text-[30px]"></i>
+    </div>
+    <nav class="pt-[2vh]">
+      <ul class="flex-col items-center ml-[30px] flex justify-around h-[30vh]">
+        <li>
+          <a href="#" class="text-green-950 leading-38 font-medium text-[20px]">Home</a>
+        </li>
+        <li>
+          <a href="#" class="text-Black-basic leading-38 font-medium text-[20px]">Blog</a>
+        </li>
+        <li>
+          <a href="#" class="text-Black-basic leading-38 font-medium text-[20px]">About Us</a>
+        </li>
+        <li>
+          <a href="#" class="text-Black-basic leading-38 font-medium text-[20px]">EN</a><i
+            class="fa-solid fa-angle-down mx-[5px]"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Carousel -->
+  <section
+    class="carousel bg-bg-default w-full pt-[100px] xs:pt-[50px] pb-[55px] xs:pb-[25px] sm:pb-[35px] sm:pt-[60px]relative sm:pt-[40px] sm:pb-40px md:pt-[40px] md:pb-40px ]">
+    <img class="absolute top-[10px] left-[-10%] xs:hidden sm:w-[200px] md:w-[22vw]"
+      src="./assets/image/—Pngtree—hand-painted noise green leaf element_4054582 1.png" alt="" />
+
+    <div
+      class="carousel_container xs:w-[95%] flex items-center w-80 m-auto py-[130px] xs:flex-col xs:py-[70px] xs:pb-[0px] md:py-[50px]">
+      <div class="carousel_left w-[60%] xs:w-[100%]">
+        <p class="font-Merienda font-[700] text-65 xs:text-[5vw] sm:text-[3.5vw] md:text-[4.3vw] text-green-default">
+          Order food online from your favourite local restaurants
+        </p>
+        <p class="text-[22px] text-gray-light-3 font-[500] my-[10px] xs:text-[3.5vw] sm:text-[2.3vw]">
+          Freshly made food delivered to your door.
+        </p>
+        <div class="search relative inline xs:hidden">
+          <input type="email" placeholder="Vui lòng nhập email "
+            class="p-[10px] rounded-[20px] pl-[35px] pr-[85px] w-[80%] sm:w-[45vw] md:w-[45vw]" />
+          <i
+            class="fa-solid fa-location-crosshairs text-organe-1 font-bold absolute z-10 left-[10px] translate-y-[-50%] top-[50%]"></i>
+          <button class="btn_search bg-green-default items-center p-[10px] rounded-[20px] absolute right-0 text-white">
+            <i class="fa-solid fa-magnifying-glass px-[10px]"></i>
+            search
+          </button>
+        </div>
+      </div>
+      <div class="carousel_right relative ">
+        <img src="./assets/image/Carousel.png" alt="" />
+        <div
+          class="countNum flex-row items-start justify-center p-[20px] inline-block rounded-xl bg-gray-light-0 absolute top-0 right-0">
+          <p class="text-organe-1 font-bold">
+            <i class="fa-solid fa-check text-organe-1 mx-[5px]"></i> 200K+
+          </p>
+          <p class="text-gray-light-1">People Delivered</p>
+        </div>
+      </div>
+    </div>
+
+    <img class="absolute top-[10px] right-0 xs:hidden sm:w-[200px] md:w-[22vw]"
+      src="./assets/image/—Pngtree—hand-painted noise green leaf element_4054582 1.png" alt="" />
+  </section>
+  <!--Discover-->
+  <section id="Discover" class="Discover py-[10vh] xs:py-[5vh] sm:py-[3.5vh] md:py-[2vh] bg-hero-pattern">
+    <div class="content flex items-center xss:w-[90%] m-auto xs:w-[95%]">
+      <div class="discover_left w-[50%] xs:w-[100%]">
+        <h4
+          class="text-65 font-Merienda text-green-default font-extralight font-bold xs:text-[5vw] sm:text-[3.4vw] md:text-[4.2vw]">
+          Explore your favourite city’s food.
+        </h4>
+        <p class="text-gray-light-1 my-[20px] xs:text-[3.5vw] sm:[2.5vw]">
+          Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh
+          tristique. Non ligula tristique ut ut libero sit convallis maecenas.
+          At egestas auctor porta mattis.
+        </p>
+        <button class="bg-green-default text-white py-[10px] px-[30px] rounded-2xl">
+          Explore <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="discover_right w-[50%] xs:hidden">
+        <img src="./assets/image/carousel_bike.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- Servion›-->
+  <section class="version 2xl:py-[45px] xl:py-[40px] lg:py-[30px] md:py-[20px] m-auto  ">
+    <div class="version_container xs:w=[95%]  sm:w-[95%] xss:w-[90%] m-auto flex 
+        md:flex-col sm:flex-col xs:flex-col
+        ">
+      <div class="item md:py-[20px] md:px-[10px] md:mx-[0] sm:flex sm:items-center  ">
+        <img class="md:w-[7vw]" src="./assets/image/vt1.png" alt="">
+        <div class="content">
+          <h4 class="2xl:text-[2rem] xl:text-[1.5rem] font-[500] md:text-[1.3rem] md:my-[10px]  ">Wide selection of
+            restaurants</h4>
+          <p class="text-gray-light-1 2xl:text-[18px] font-[400]">Lorem ipsum dolor sit amet consectetur. Ornare massa
+            nunc nibh tristique.</p>
+        </div>
+      </div>
+      <div class="item  sm:flex sm:items-center  ">
+        <img class="md:w-[7vw] sm:order-2 xs:order-2" src="./assets/image/vt2.png" alt="">
+        <div class="content sm:text-right xs:text-right">
+          <h4 class="2xl:text-[2rem] xl:text-[1.5rem] font-[500]  md:text-[1.3rem]">Easy ordering process</h4>
+          <p class="text-gray-light-1 2xl:text-[18px] font-[400]">Lorem ipsum dolor sit amet consectetur. Ornare massa
+            nunc nibh tristique.</p>
+        </div>
+      </div>
+      <div class="item  sm:flex sm:items-center  ">
+        <img class="md:w-[7vw]" src="./assets/image/vt3.png" alt="">
+        <div class="content">
+          <h4 class="2xl:text-[2rem] xl:text-[1.5rem] font-[500]  md:text-[1.3rem]">Fast delivery within 20 min</h4>
+          <p class="text-gray-light-1 2xl:text-[18px] font-[400]">Lorem ipsum dolor sit amet consectetur. Ornare massa
+            nunc nibh tristique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Get food -->
+  <section
+    class="getFood xss:w-[90%] xs:w-[95%] lg:h-[90vh] md:h-[80vh] sm:h-[65vh] xs:h-[55vh] xs:my-[20px] xss:[8vh]">
+    <div class="getFood_context ">
+      <h1
+        class=" 2xl:text-[40px] 2xl:font-[500] xl:text-[35px] lg:text-[30px] md:text-[25px] sm:text-[25px] xs:text-[22px] font-[500 ]">
+        Want to be a part of Foodtime ?</h1>
+      <p
+        class=" 2xl:text-[20px] 2xl:text-white 2xl:my-[5vh]  xl:my-[4vh]  lg:my-[3.5vh] md:my-[2vh] sm:my-[1.5vh] xs:text-[14px] xs:my-[10px] ">
+        List your restaurants or shop on foodtime . </p>
+      <div class="btn sm:py-[10px] sm:px-[10px]  xs:px-[10px]">
+        Get started ->
+      </div>
+    </div>
+  </section>
+  <!-- countDown  and resgiter-->
+  <section
+    class="myOrder 2xl:py-[10vh] 2xl:mt-[8vh] xl:mt-[5vh]  xl:py-[9vh] lg:py-[5vh] md:py-[4vh] bg-bg-default flex items-center justify-center ">
+    <div class="order_container xs:w-[95%] xss:w-[90%] mx-auto flex items-center">
+      <div class="order_countTime w-[50%] h-[550px]  ">
+        <h1 class="text-center 2xl:text-[35px] xl:text-[30px] 
+             lg:text-[23px]
+             text-[#333]
+             font-Merienda ">Order Now</h1>
+        <p class="text-center 2xl:text-[30px] xl:text-[25px] 
+             lg:text-[20px]
+             text-[#333]
+             font-Merienda ">Time remaining <span class="text-orange-600">food</span> today?</p>
+        <div class="order_content w-[85%] h-[550px] m-auto flex items-center justify-center">
+          <div class="Oclock w-full h-[300px]  rounded-2xl flex items-center justify-around ">
+            <div class="items">
+              <h1 class="w-[150px] h-[50px] bg-white text-center 
+                       leading-[50px] font-bold
+                       ">Days</h1>
+              <p class="days w-[150px] h-[150px]   bg-orange-400 2xl:text-[40px] text-center leading-[150px] font-bold 
+                       font-Merienda  ">
+                22
+              </p>
+            </div>
+            <div class="items">
+              <h1 class="w-[150px] h-[50px] bg-white text-center 
+                    leading-[50px] font-bold
+                    ">Hour</h1>
+              <p class="hour w-[150px] h-[150px]  bg-orange-400 2xl:text-[40px] text-center leading-[150px] font-bold 
+                    font-Merienda ">
+                22
+              </p>
+            </div>
+            <div class="items">
+              <h1 class="w-[150px] h-[50px] bg-white text-center 
+                  leading-[50px] font-bold
+                  ">Minute</h1>
+              <p class="minute w-[150px] h-[150px]  bg-orange-400 2xl:text-[40px] text-center leading-[150px] font-bold 
+                  font-Merienda ">
+                22
+              </p>
+            </div>
+            <div class="items">
+              <h1 class="w-[150px] h-[50px] bg-white text-center 
+                leading-[50px] font-bold
+                ">Second</h1>
+              <p class="second w-[150px] h-[150px]  bg-orange-400 2xl:text-[40px] text-center leading-[150px] font-bold 
+                font-Merienda ">
+                22
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="order_form w-[50%] h-[500px] ">
+        <h1 class="text-center 2xl:text-[35px] xl:text-[30px] 
+            lg:text-[23px]
+            text-[#333
+            font-Merienda ">Order food and delivery</h1>
+        <p class="text-center 2xl:text-[30px] xl:text-[25px] 
+            lg:text-[20px]
+            text-[#333]
+            font-Merienda ">Where should we deliver your <span class="text-orange-600">food</span>today?</p>
+        <form action="" id="yourForm" class="myForm flex flex-col items-center justify-center mt-[10vh]">
+          <div class="flex items-center w-[100%] justify-around">
+            <input class="firtName w-[40%] p-[10px] rounded-[20px]" type="text" placeholder="Firts Name *">
+            <input class="lastName w-[40%] p-[10px] rounded-[20px]" type="text" placeholder="Last Name *">
+          </div>
+          <input class=" Location w-[90%]  p-[10px] rounded-[20px] my-[20px]" type="text" placeholder="Location * "
+            value="Cao đẳng FPT, 116 N.Huy.Tưởng.ĐN">
+          <div class="flex items-center w-[100%] justify-around">
+            <input class="AGE w-[40%] p-[10px] rounded-[20px]" type="number" placeholder="AGE *">
+            <input class="Phone w-[40%] p-[10px] rounded-[20px]" type="number" placeholder="Phone number *"
+              maxlength="11">
+
+          </div>
+          <input class="w-[90%]  p-[10px] rounded-[20px] my-[20px]" type="email" placeholder="Email ">
+          <div class="notifica w-[80%] ">
+
+          </div>
+          <button class="btn btn_form">
+            Get Food
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Question -->
+  <section id="question"  class="question 2xl:py-[7vh] py-[50px]">
+    <div class="question_container xs:w-[95%] xss:w-[90%] m-auto flex flex-col items-center  ">
+      <h1 class="2xl:text-[45px] xl:text-[45px] xl:font-[500] leading-[64px]">Frequently asked questions</h1>
+      <div class="question_mouse">
+        <button class="btn General">
+          General
+        </button>
+        <button class="btn business">
+          For business
+        </button>
+      </div>
+      <div class="question_content w-full   ">
+        <div class="item">
+          <div class="question_item flex p-[15px] ">
+            <p>What do I need to apply for the account?</p>
+            <i class="w-[25px] h-[25px] rounded-[50%] leading-[25px]  text-center add fa-solid fa-plus"></i>
+          </div>
+          <div class="answer__content">
+        
+            </div>
+       
+        </div>
+        <div class="item">
+          <div class="question_item flex p-[15px] ">
+            <p>What do I need to apply for the account?</p>
+            <i class="w-[25px] h-[25px] rounded-[50%] leading-[25px]  text-center add fa-solid fa-plus"></i>
+          </div>
+          <div class="answer__content">
+        
+            </div>
+       
+        </div>
+        <div class="item">
+          <div class="question_item flex p-[15px] ">
+            <p>What do I need to apply for the account?</p>
+            <i class="w-[25px] h-[25px] rounded-[50%] leading-[25px]  text-center add fa-solid fa-plus"></i>
+          </div>
+          <div class="answer__content">
+        
+            </div>
+       
+        </div>
+        <div class="item">
+          <div class="question_item flex p-[15px] ">
+            <p>What do I need to apply for the account?</p>
+            <i class="w-[25px] h-[25px] rounded-[50%] leading-[25px]  text-center add fa-solid fa-plus"></i>
+          </div>
+          <div class="answer__content">
+        
+            </div>
+       
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- <i class="fa-solid fa-minus"></i> -->
+  <section class="getApp py-[25px]  w-[100%] h-[100%]">
+    <div class="getApp_container flex items-center justify-between sm:flex-col-reverse xs:flex-col-reverse  xs:w-[95%] xss:w-[90%] m-auto">
+        <div class="getApp_left w-[45vw] p-[30px] sm:w-full xs:w-full">
+             <h1 class="2xl:text-[40px] font-[600] xl:text-[45px] text-green-default 2xl:leading-[45px]  xs:text-[24px] ">Put us in your pocket</h1>
+             <p class="2xl:text-[22px] font-[400] text-gray-light-2 
+             xl:my-[10px] xl:text-[18px xs:my-[14px] 
+             ">Download our app from google play or app store and you don’t have to be worry about your food anymore. </p>
+             <div class="app_dowload flex items-center justify-between sm:mt-[20px] ">
+              <img class="w-[45%] h-[88px] lg:h-[70px] xs:h-[65px] xs:"  src="./assets/image/Google Play Black.png" alt="">
+              <img class="w-[45%] h-[88px] lg:h-[70px] xs:h-[65px]  " src="./assets/image/App Store Black.png" alt="">
+             </div>
+        </div>
+        <!--  -->
+        <div class="getApp_right w-[55vw] bg-getApp h-[30vw] bg-no-repeat bg-cover  rounded-lg sm:w-full xs:w-full">
+           
+        </div>
+    </div>
+  </section>
+  <!--  -->
+  <footer class="footer_arena w-100% 2xl:h-[450px] xl:h-[300px] sm:py-[25px] xs:py-[25px]" >
+     <div class="lines ">
+        <div class="line">  
+        </div>
+        <div class="line">
+        </div>
+        <div class="line">
+        </div>
+     </div>
+     <div class="footer_container xs:w-[95%] xss:w-[90%] flex items-center justify-between xs:flex-col">
+       <div class="items w-[30%]  ">
+        <div class="logo">
+          <img src="./assets/image/Icon.png" alt="" />
+        </div>
+        <p class="w-90% sm:hidden xs:hidden">Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor convallis. Bibendum sapien suspendisse ipsum urna malesuada elit. Bibendum vitae nibh scelerisque sed aliquam ullamcorper est. </p>
+       </div>
+       <div class="items  xs:hidden">
+          <h5>Quick links</h5>
+           <p><a href="">Browse Foodtime</a></p>
+           <p><a href="">Browse Food tim</a></p>
+           <p><a href="">Registrations</a></p>
+     </div>
+     <div class="items  xs:hidden">
+      <h5>About</h5>
+       <p><a href="">About us`</a></p>
+       <p><a href="">Minssion</a></p>
+       <p><a href="">Contact</a></p>
+ </div>
+ <div class="items   xs:hidden">
+  <h5>Social</h5>
+   <p><a href="">Facebook</a></p>
+   <p><a href=""> Twitter</a></p>
+   <p><a href="">Instagram</a></p>
+</div>
+  </footer>
+<!-- 
+  <div class="popup w-[200px] h-[50px] bg-white  right-[0] top-[100px] opacity-[1] flex items-center text-[20px]">
+    <i class="fa-solid fa-circle-check mx-[15px] text-[green]"></i>
+    <p class="text-gray-600">Success</p>
+    <i class="ml-[30px] fa-solid fa-xmark"></i>
+  </div> -->
+  <div class="myLogin">
+     <div class="login_container">
+      <div>
+        <span class="w-[35%]">User Name</span>
+        <input type="email" placeholder="fpt123@gmail.com">
+      </div>
+         <div>
+        <span class="w-[35%]">Password</span>
+        <input type="password" placeholder="****">
+      </div>
+     <div class="flex w-full items-center justify-around">
+      <a href="#">Register</a>
+      <a href="#">Forgot password</a>
+     </div>    
+        <button class="btn btnLogin m-auto">
+          Login
+        </button>
+     </div>
+  </div>
+
+
+  <!-- Back to top  -->
+  <div
+    class="btn_toTop w-[50px] h-[50px] bg-green-950 rounded-[10px] fixed bottom-[20px] right-[20px] flex items-center justify-center hover:cursor-pointer  ">
+    <i class="add fa-solid fa-chevron-up text-white font-bold"></i>
+  </div>
+
+  <!-- JS -->
+  <script src="./src/main.js"></script>
+</body>
+
+</html>
